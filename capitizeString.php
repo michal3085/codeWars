@@ -1,6 +1,6 @@
 <?php
 
-function toJadenCase(string $string)
+function toJadenCase(string $string): string
 {
     return implode(' ', array_map(fn ($k) => ucfirst($k), explode(' ', $string)));
 }
