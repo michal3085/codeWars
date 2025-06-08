@@ -3,7 +3,11 @@
 
 function stray(array $arr): int
 {
-    return array_key_first(array_filter(array_count_values($arr), fn ($value) => $value === 1 ));
+    return array_key_first(
+        array_filter(
+            array_count_values($arr), fn ($value) => $value === 1
+        )
+    );
 }
 
 $tests = [
